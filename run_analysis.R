@@ -48,9 +48,6 @@ names(S) <- "subject"
 # Create final tidy data set
 tidyData <- cbind(S, Y, X)
 
-# Write the final tidy data set to file
-write.table(tidyData, "merged_tidy_data.txt")
-
 library(data.table)
 dataDT <- data.table(tidyData)
 

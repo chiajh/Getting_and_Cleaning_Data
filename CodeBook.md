@@ -31,12 +31,9 @@ The source data was collected from the above URL to complete this assignment. Th
 
 7) Combined the data frames to produce one data frame containing the subjects, activities and measurements. 
 
-8) Generated "merged_tidy_data.txt" from the combined data frame as the first expected output.
+8) Create an independent tidy data set with the average of each variable for each activity and each subject. This was achieved by     using the data.table library to easily group the tidy data by subject and activity.
 
-9) Create a second, independent tidy data set with the average of each variable for each activity and each subject. This was achieved by using 
-   the data.table library to easily group the tidy data by subject and activity.
-
-10) Generated "dataset_with_average.txt" as the second expected output.
+9) Generated "dataset_with_average.txt" as the second expected output.
 
 
 ## Variables
