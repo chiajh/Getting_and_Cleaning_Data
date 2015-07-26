@@ -24,7 +24,7 @@ This is a repository contains the information/instructions about Course Project 
 
 5) Open RStudio and make sure set the working directory to above folder e.g. setwd("C:\\Users\\yourname\\Module3\\UCI HAR Dataset\\") and then load and run run_analysis.R file using source("run_analysis.R") command.
 
-6) Use data <- read.table("data_set_with_the_averages.txt") to read the data. 
+6) Use data <- read.table("dataset_with_average.txt") to read the data. 
 
 ## Dependencies
 

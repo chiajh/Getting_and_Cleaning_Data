@@ -36,7 +36,7 @@ The source data was collected from the above URL to complete this assignment. Th
 9) Create a second, independent tidy data set with the average of each variable for each activity and each subject. This was achieved by using 
    the data.table library to easily group the tidy data by subject and activity.
 
-10) Produced "data_set_with_the_average.txt" as the second expected output.
+10) Produced "dataset_with_average.txt" as the second expected output.
 
 
 ## Variables
