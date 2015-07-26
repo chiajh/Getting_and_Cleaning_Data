@@ -28,7 +28,6 @@ X <- X[, index_mean_std]
 
 # 3. Uses descriptive activity names to name the activities in the data set.
 activities <- read.table("activity_labels.txt")
-
 Y[, 1] = activities[Y[, 1], 2]
 names(Y) <- "activity"
 
@@ -51,10 +50,10 @@ tidyData <- cbind(S, Y, X)
 library(data.table)
 dataDT <- data.table(tidyData)
 
-# mean function applies to sub-data.table, called '.SD' 
-calculatedData<- dataDT[, lapply(.SD, mean), by=c("subject", "activity")]  
+# Applly mean function to sub-data.table, called '.SD' 
+meanData<- dataDT[, lapply(.SD, mean), by=c("subject", "activity")]  
 
 # Write the calculated mean data set to file without row name
-write.table(calculatedData, "dataset_with_average.txt", row.name=FALSE)
+write.table(meanData, "dataset_with_average.txt", row.name=FALSE)
 
 
