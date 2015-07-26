@@ -5,9 +5,9 @@ This is a repository contains the information/instructions about Course Project 
 
 ## Assignment submission files
 
-run_analysis.R
-README.md
-CookBook.md
+1) run_analysis.R
+2) README.md
+3) CookBook.md
 
 ## Instructions
 
