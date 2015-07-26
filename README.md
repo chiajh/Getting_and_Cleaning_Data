@@ -9,7 +9,7 @@ This is a repository contains the information/instructions about Course Project 
 
 2) README.md
 
-3) CookBook.md
+3) CodeBook.md
 
 
 ## Instructions
