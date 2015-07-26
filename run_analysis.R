@@ -29,8 +29,6 @@ X <- X[, index_mean_std]
 # 3. Uses descriptive activity names to name the activities in the data set.
 activities <- read.table("activity_labels.txt")
 
-# Change activity name to the lower case
-activities[, 2] = tolower(activities[, 2])
 Y[, 1] = activities[Y[, 1], 2]
 names(Y) <- "activity"
 
@@ -41,9 +39,6 @@ names(X) <- features[index_mean_std, 2]
 
 # Remove the open and close bracket
 names(X) <- gsub("\\(|\\)", "", names(X)) 
-
-# Change the column names of X to lower case
-names(X) <- tolower(names(X))
 
 
 # 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
@@ -63,6 +58,6 @@ dataDT <- data.table(tidyData)
 calculatedData<- dataDT[, lapply(.SD, mean), by=c("subject", "activity")]  
 
 # Write the calculated mean data set to file without row name
-write.table(calculatedData, "data_set_with_the_average.txt", row.name=FALSE)
+write.table(calculatedData, "dataset_with_average.txt", row.name=FALSE)
 
 

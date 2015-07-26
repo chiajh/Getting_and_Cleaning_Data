@@ -31,19 +31,20 @@ The source data was collected from the above URL to complete this assignment. Th
 
 7) Combined the data frames to produce one data frame containing the subjects, activities and measurements. 
 
-8) Produced "merged_tidy_data.txt" from the combined data frame as the first expected output.
+8) Generated "merged_tidy_data.txt" from the combined data frame as the first expected output.
 
 9) Create a second, independent tidy data set with the average of each variable for each activity and each subject. This was achieved by using 
    the data.table library to easily group the tidy data by subject and activity.
 
-10) Produced "dataset_with_average.txt" as the second expected output.
+10) Generated "dataset_with_average.txt" as the second expected output.
 
 
 ## Variables
 
 subject: 1 to 30 each representing 30 volunteers within an age bracket of 19-48 years.
 
-activity: the activity that the subject was doing at the time of the measurement: walking, walking_upstairs, walking_downstairs, sitting, standing and laying.
+activity: the activity that the subject was doing at the time of the measurement: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,
+SITTING, STANDING, LAYING
 
 66 mean and standard deviation variables as listed below.
 
